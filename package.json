@@ -11,15 +11,18 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@vueuse/core": "^9.1.0",
     "vue": "^3.2.37"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.25.2",
     "@iconify-json/carbon": "^1.1.7",
+    "@unocss/reset": "^0.45.5",
     "@vitejs/plugin-vue": "^3.0.0",
     "eslint": "^8.21.0",
     "typescript": "^4.6.4",
     "unocss": "^0.45.5",
+    "unplugin-auto-import": "^0.11.1",
     "unplugin-vue-components": "^0.22.0",
     "vite": "^3.0.0",
     "vite-plugin-pages": "^0.25.0",
