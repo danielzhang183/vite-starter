@@ -8,7 +8,8 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "play": "pnpm -C playground run dev"
   },
   "dependencies": {
     "@vueuse/core": "^9.1.0",
