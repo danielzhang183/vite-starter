@@ -1,7 +1,7 @@
 import NProgress from 'nprogress'
-import type { Router } from 'vue-router'
+import type { UserModule } from '../types'
 
-export const install = ({ router }: { router: Router }) => {
+export const install: UserModule = ({ router }) => {
   router.beforeEach((to, from) => {
     if (to.path !== from.path)
       NProgress.start()
