@@ -19,9 +19,11 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.25.2",
     "@iconify-json/carbon": "^1.1.7",
+    "@types/node": "^18.7.4",
     "@unocss/reset": "^0.45.5",
     "@vitejs/plugin-vue": "^3.0.0",
     "eslint": "^8.21.0",
+    "pinia": "^2.0.18",
     "typescript": "^4.6.4",
     "unocss": "^0.45.5",
     "unplugin-auto-import": "^0.11.1",
