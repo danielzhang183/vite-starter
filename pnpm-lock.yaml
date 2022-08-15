@@ -7,10 +7,12 @@ importers:
       '@antfu/eslint-config': ^0.25.2
       '@iconify-json/carbon': ^1.1.7
       '@types/node': ^18.7.4
+      '@types/nprogress': ^0.2.0
       '@unocss/reset': ^0.45.5
       '@vitejs/plugin-vue': ^3.0.0
       '@vueuse/core': ^9.1.0
       eslint: ^8.21.0
+      nprogress: ^0.2.0
       pinia: ^2.0.18
       typescript: ^4.6.4
       unocss: ^0.45.5
@@ -24,11 +26,13 @@ importers:
       vue-tsc: ^0.38.4
     dependencies:
       '@vueuse/core': 9.1.0_vue@3.2.37
+      nprogress: 0.2.0
       vue: 3.2.37
     devDependencies:
       '@antfu/eslint-config': 0.25.2_qugx7qdu5zevzvxaiqyxfiwquq
       '@iconify-json/carbon': 1.1.7
       '@types/node': 18.7.4
+      '@types/nprogress': 0.2.0
       '@unocss/reset': 0.45.5
       '@vitejs/plugin-vue': 3.0.1_vite@3.0.4+vue@3.2.37
       eslint: 8.21.0
@@ -521,6 +525,10 @@ packages:
 
   /@types/normalize-package-data/2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
+    dev: true
+
+  /@types/nprogress/0.2.0:
+    resolution: {integrity: sha512-1cYJrqq9GezNFPsWTZpFut/d4CjpZqA0vhqDUPFWYKF1oIyBz5qnoYMzR+0C/T96t3ebLAC1SSnwrVOm5/j74A==}
     dev: true
 
   /@types/prop-types/15.7.5:
@@ -2878,6 +2886,10 @@ packages:
     dependencies:
       path-key: 3.1.1
     dev: true
+
+  /nprogress/0.2.0:
+    resolution: {integrity: sha512-I19aIingLgR1fmhftnbWWO3dXc0hSxqHQHQb3H8m+K3TnEn/iSeTZZOyvKXWqQESMwuUVnatlCnZdLBZZt2VSA==}
+    dev: false
 
   /nth-check/2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
