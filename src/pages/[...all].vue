@@ -1,6 +1,6 @@
 <template>
   <div>
-    Not Found
+    {{ t('not-found') }}
   </div>
 </template>
 

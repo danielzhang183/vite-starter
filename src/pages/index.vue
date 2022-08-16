@@ -7,6 +7,7 @@ const go = () => {
   if (name)
     router.push(`/hi/${encodeURIComponent(name)}`)
 }
+const { t } = useI18n()
 </script>
 
 <template>
@@ -20,7 +21,7 @@ const go = () => {
       </a>
     </p>
     <p>
-      <em text-sm opacity-75>Opinionated Vite Starter Template</em>
+      <em text-sm opacity-75>{{ t('intro.desc') }}</em>
     </p>
 
     <div py-4 />
@@ -28,8 +29,8 @@ const go = () => {
     <input
       id="input"
       v-model="name"
-      placeholder="What's your name"
-      aria-label="What's your name"
+      :placeholder="t('intro.whats-your-name')"
+      :aria-label="t('intro.whats-your-name')"
       type="text"
       autocomplete="false"
       p="x4 y2"
@@ -40,7 +41,7 @@ const go = () => {
       outline="none active:none"
       @keydown.enter="go"
     >
-    <label class="hidden" for="input">What's your name?</label>
+    <label class="hidden" for="input">t('intro.whats-your-name')</label>
 
     <div>
       <button
@@ -48,7 +49,7 @@ const go = () => {
         :disabled="!name"
         @click="go"
       >
-        GO
+        {{ t('button.go') }}
       </button>
     </div>
   </div>
