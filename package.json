@@ -10,7 +10,10 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "play": "pnpm -C playground run dev",
-    "docs:dev": "pnpm -C docs run dev"
+    "docs:dev": "pnpm -C docs run dev",
+    "test": "vitest",
+    "test:unit": "vitest",
+    "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
     "@vueuse/core": "^9.1.0",
@@ -26,7 +29,9 @@
     "@types/nprogress": "^0.2.0",
     "@unocss/reset": "^0.45.5",
     "@vitejs/plugin-vue": "^3.0.0",
+    "@vue/test-utils": "^2.0.2",
     "eslint": "^8.21.0",
+    "jsdom": "^20.0.0",
     "pinia": "^2.0.18",
     "typescript": "^4.6.4",
     "unocss": "^0.45.5",
@@ -35,6 +40,7 @@
     "vite": "^3.0.0",
     "vite-plugin-pages": "^0.25.0",
     "vite-plugin-vue-layouts": "^0.7.0",
+    "vitest": "^0.22.0",
     "vue-router": "^4.1.3",
     "vue-tsc": "^0.38.4"
   }

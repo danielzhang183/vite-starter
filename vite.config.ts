@@ -58,4 +58,12 @@ export default defineConfig({
       include: [path.resolve(__dirname, 'locales/**')],
     }),
   ],
+  // https://github.com/vitest-dev/vitest
+  test: {
+    include: ['test/**/*.test.ts'],
+    environment: 'jsdom',
+    deps: {
+      inline: ['@vue', '@vueuse'],
+    },
+  },
 })
