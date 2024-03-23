@@ -5,9 +5,10 @@
 <template>
   <nav px-4 py-3 text-lg border="b base" flex="~ items-center gap-2">
     <div flex="~ items-center">
-      <div i-carbon-campsite text-2em />
-      <div text-primary ml-2 mt-1 leading-2em>
-        Vite Lite
+      <div i-carbon-campsite text-primary text-2xl />
+      <div ml-1 text-xl>
+        Vite
+        <sup class="text-xs italic">template</sup>
       </div>
     </div>
     <div flex-auto />
