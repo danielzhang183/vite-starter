@@ -13,9 +13,24 @@
     </div>
     <div flex-auto />
 
-    <button btn-icon @click="toggleDark()">
-      <div i-carbon-sun dark:i-carbon-moon />
+    <button btn-icon title="Theme Toggle" @click="toggleDark()">
+      <div i-ph-sun-duotone dark:i-ph-moon-duotone />
     </button>
+
+    <VDropdown :distance="6">
+      <button
+        btn-icon
+        title="Built Information"
+      >
+        <div i-ph-info-duotone />
+      </button>
+      <template #popper>
+        <div px5 py4 grid="~ gap-y-3 gap-x-2 cols-[max-content_1fr] items-center">
+          <div i-ph-package-duotone text-xl />
+          <div>Built info</div>
+        </div>
+      </template>
+    </VDropdown>
 
     <a
       btn-icon inline-flex items-center

@@ -6,9 +6,11 @@ import App from './App.vue'
 
 import '@unocss/reset/tailwind.css'
 import 'uno.css'
+import 'floating-vue/dist/style.css'
 import './styles/main.css'
 import './styles/default-theme.css'
 import './styles/vars.css'
+import './styles/dropdown.css'
 import type { UserModule } from './types'
 
 const app = createApp(App)
