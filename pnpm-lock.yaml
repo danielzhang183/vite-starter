@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@iconify-json/logos':
+        specifier: ^1.1.42
+        version: 1.1.42
+      '@iconify/json':
+        specifier: ^2.2.195
+        version: 2.2.195
       '@vueuse/core':
         specifier: ^9.13.0
         version: 9.13.0(vue@3.4.21)
@@ -653,15 +659,21 @@ packages:
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
     dev: true
 
-  /@iconify-json/carbon@1.1.31:
-    resolution: {integrity: sha512-CAvECFfiwGyZmlcuM2JLMRDEN3VsIEZv6lml7Xf+3giQ5oXloADm0b5wiVPFZmONKM5jXERmx+E7YSvAtFJIbw==}
+  /@iconify-json/logos@1.1.42:
+    resolution: {integrity: sha512-/f+frtPm3m3Z30oy8Pk+QqRDkbmAiIaWGPl5CmsCXm15MVfvw9a/V/gD7WzdyuSGAZcFuQaqbHXj92y/n+2ifg==}
     dependencies:
       '@iconify/types': 2.0.0
-    dev: true
+    dev: false
+
+  /@iconify/json@2.2.195:
+    resolution: {integrity: sha512-oDO79OGefkm/F4xeRDWSiigxsf7yMJAHRzyOoqmkrerUDJ/5JxRSsezUJhYlVarbRFdaBLGh7joJwtLO5mAmXw==}
+    dependencies:
+      '@iconify/types': 2.0.0
+      pathe: 1.1.2
+    dev: false
 
   /@iconify/types@2.0.0:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
-    dev: true
 
   /@iconify/utils@2.1.22:
     resolution: {integrity: sha512-6UHVzTVXmvO8uS6xFF+L/QTSpTzA/JZxtgU+KYGFyDYMEObZ1bu/b5l+zNJjHy+0leWjHI+C0pXlzGvv3oXZMA==}
@@ -5423,7 +5435,6 @@ packages:
 
   /pathe@1.1.2:
     resolution: {integrity: sha512-whLdWMYL2TwI08hn8/ZqAbrVemu0LNaNNJZX73O6qaIdCTfXutsLhMkjdENX0qhsQ9uIimo4/aQOmXkoon2nDQ==}
-    dev: true
 
   /pathval@1.1.1:
     resolution: {integrity: sha512-Dp6zGqpTdETdR63lehJYPeIOqpiNBNtc7BpWSLrOje7UaIsE5aY92r/AunQA7rsXvet3lrJ3JnZX29UPTKXyKQ==}

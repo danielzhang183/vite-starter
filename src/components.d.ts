@@ -11,5 +11,6 @@ declare module '@vue/runtime-core' {
     Footer: typeof import('./components/Footer.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    TheNav: typeof import('./components/nav/TheNav.vue')['default']
   }
 }
