@@ -1,2 +1,13 @@
+# Modified from .gitignore
 node_modules
+*.log
 dist
+#.env # Not ignoring this file because it can contain build-related settings.
+.DS_Store
+.idea/
+.vite-inspect
+.eslintcache
+
+*~
+*swp
+*swo

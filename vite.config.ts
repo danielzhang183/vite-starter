@@ -66,12 +66,12 @@ export default defineConfig({
     target: 'esnext',
     sourcemap: false,
     chunkSizeWarningLimit: 1500,
-    rollupOptions: {
-      output: {
-        entryFileNames: 'assets/js/[name]-[hash].js',
-        chunkFileNames: 'assets/js/[name]-[hash].js',
-        assetFileNames: 'assets/[ext]/[name]-[hash].[ext]',
-      },
-    },
+    // rollupOptions: {
+    //   output: {
+    //     entryFileNames: 'assets/js/[name]-[hash].js',
+    //     chunkFileNames: 'assets/js/[name]-[hash].js',
+    //     assetFileNames: 'assets/[ext]/[name]-[hash].[ext]',
+    //   },
+    // },
   },
 })
