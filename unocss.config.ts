@@ -36,8 +36,6 @@ export default defineConfig({
       'text-secondary': 'text-$c-text-secondary',
       'text-secondary-light': 'text-$c-text-secondary-light',
 
-      // btn
-      'btn': 'px-4 py-1 rounded inline-block bg-teal-600 text-white cursor-pointer hover:bg-teal-700 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50',
       // buttons
       'btn-base': 'cursor-pointer disabled:pointer-events-none disabled:bg-$c-bg-btn-disabled disabled:text-$c-text-btn-disabled',
       'btn-solid': 'btn-base px-4 py-2 rounded text-inverted bg-$c-primary hover:bg-$c-primary-active',
@@ -45,7 +43,7 @@ export default defineConfig({
       'btn-text': 'btn-base px-4 py-2 text-$c-primary hover:text-$c-primary-active',
       'btn-action-icon': 'btn-base hover:bg-active rounded-full h9 w9 flex items-center justify-center disabled:bg-transparent disabled:text-$c-text-secondary',
       'btn-danger': 'btn-base px-4 py-2 rounded text-white bg-$c-danger hover:bg-$c-danger-active',
-      'btn-icon': 'rounded py-1 px-2 hover:bg-active',
+      'btn-icon': 'rounded p-2 hover:bg-active',
 
       // input
       'input-base-focus': 'focus:outline-none focus:border-$c-primary',

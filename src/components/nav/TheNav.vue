@@ -11,6 +11,7 @@
         <sup class="text-xs italic opacity-75">Opinionated Template</sup>
       </div>
     </div>
+
     <div flex-auto />
 
     <button btn-icon title="Theme Toggle" @click="toggleDark">
@@ -18,10 +19,7 @@
     </button>
 
     <VDropdown :distance="6">
-      <button
-        btn-icon
-        title="Built Information"
-      >
+      <button btn-icon title="Built Information">
         <div i-ph-info-duotone />
       </button>
       <template #popper>
@@ -30,7 +28,7 @@
           <div>Built info</div>
         </div>
         <div px5 py4 flex="~ items-center gap-y-3 gap-x-2">
-          <div i-ph-microsoft-teams-logo-duotone text-xl />
+          <div i-ph-microsoft-teams-logo-duotone mt-1 text-xl />
           <template v-for="team of teamMembers" :key="team.github">
             <a :href="`https://github.com/sponsors/${team.github}`" target="_blank" rounded-full transition duration-300 border="~ transparent" hover="scale-105 border-primary">
               <img :src="`/avatars/${team.github}-100x100.png`" :alt="team.display" h-7 w-7 rounded-full height="60" width="60">
@@ -41,7 +39,7 @@
     </VDropdown>
 
     <a
-      inline-flex items-center btn-icon
+      btn-icon
       rel="noreferrer"
       href="https://github.com/danielzhang183/vite-starter"
       target="_blank"
