@@ -6,6 +6,7 @@ import Layouts from 'vite-plugin-vue-layouts'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Unocss from 'unocss/vite'
+import VueDevTools from 'vite-plugin-vue-devtools'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
 
 // https://vitejs.dev/config/
@@ -46,6 +47,9 @@ export default defineConfig({
     Components({
       dts: 'src/components.d.ts',
     }),
+
+    // https://github.com/webfansplz/vite-plugin-vue-devtools
+    VueDevTools(),
 
     // https://github.com/antfu/unocss
     // see unocss.config.ts for config
