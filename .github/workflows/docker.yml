@@ -1,0 +1,52 @@
+name: Build & Push Docker Image
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - '*'
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch: {}
+
+concurrency:
+  group: ${{ github.event_name }}-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  docker:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest] # "macOS-latest"
+        node: [18]
+    runs-on: ${{ matrix.os }}
+    permissions:
+      contents: read
+      packages: write
+    env:
+      IMAGE_PREFIX: vite-starter
+    if: 'contains(github.event.head_commit.message, ''[image]'') || github.event_name == ''workflow_dispatch'''
+    steps:
+      - name: Export Global Var
+        run: |
+          echo "ALI_DOCKER_REGISTRY=${{ secrets.ALI_DOCKER_HUB_REGISTRY }}" >> $GITHUB_ENV
+          echo "ALI_DOCKER_USERNAME=${{ secrets.ALI_DOCKER_REGISTRY_USERNAME }}" >> $GITHUB_ENV
+          echo "ALI_DOCKER_PASSWORD=${{ secrets.ALI_DOCKER_REGISTRY_PASSWORD }}" >> $GITHUB_ENV
+          echo "PROJECT_HOME=$PWD" >> $GITHUB_ENV
+          echo "TAG=`echo \`date +%Y%m%d\`.${GITHUB_SHA} | cut -c1-16`" >> $GITHUB_ENV
+
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Build & Push Image
+        run: |
+          cd $PROJECT_HOME
+          image=$IMAGE_PREFIX-node${{ matrix.node }}:${TAG}
+          docker build -f Dockerfile -t ${image} .
+          docker login --username=$ALI_DOCKER_USERNAME --password=$ALI_DOCKER_PASSWORD $ALI_DOCKER_REGISTRY
+          docker tag $image $ALI_DOCKER_REGISTRY/dylan52/$image
+          docker push $ALI_DOCKER_REGISTRY/dylan52/$image
+          echo "image:" ${image}
