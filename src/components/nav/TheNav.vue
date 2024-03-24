@@ -8,12 +8,12 @@
       <div i-carbon-campsite text-primary text-2xl />
       <div ml-1 text-xl>
         Vite
-        <sup class="text-xs italic">template</sup>
+        <sup class="text-xs italic opacity-75">Opinionated Template</sup>
       </div>
     </div>
     <div flex-auto />
 
-    <button btn-icon title="Theme Toggle" @click="toggleDark()">
+    <button btn-icon title="Theme Toggle" @click="toggleDark">
       <div i-ph-sun-duotone dark:i-ph-moon-duotone />
     </button>
 

@@ -20,9 +20,6 @@ const { t } = useI18n()
         Vite Starter
       </a>
     </p>
-    <p>
-      <em text-sm opacity-75>{{ t('intro.desc') }}</em>
-    </p>
 
     <div py-4 />
 
@@ -33,19 +30,14 @@ const { t } = useI18n()
       :aria-label="t('intro.whats-your-name')"
       type="text"
       autocomplete="false"
-      p="x4 y2"
-      w="250px"
-      text="center"
-      bg="transparent"
-      border="~ rounded gray-200 dark:gray-700"
-      outline="none active:none"
+      input-base w="250px"
       @keydown.enter="go"
     >
     <label class="hidden" for="input">t('intro.whats-your-name')</label>
 
     <div>
       <button
-        m-3 text-sm btn
+        btn-solid m-3 text-sm
         :disabled="!name"
         @click="go"
       >
