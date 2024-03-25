@@ -42,6 +42,9 @@ importers:
       '@intlify/vite-plugin-vue-i18n':
         specifier: ^6.0.3
         version: 6.0.3(vite@3.2.8)(vue-i18n@9.10.2)
+      '@types/chroma-js':
+        specifier: ^2.4.4
+        version: 2.4.4
       '@types/fs-extra':
         specifier: ^11.0.4
         version: 11.0.4
@@ -66,6 +69,9 @@ importers:
       bumpp:
         specifier: ^9.4.0
         version: 9.4.0
+      chroma-js:
+        specifier: ^2.4.2
+        version: 2.4.2
       cross-env:
         specifier: ^7.0.3
         version: 7.0.3
@@ -78,6 +84,9 @@ importers:
       fs-extra:
         specifier: ^11.2.0
         version: 11.2.0
+      ignore-dependency-scripts:
+        specifier: ^1.0.1
+        version: 1.0.1
       jsdom:
         specifier: ^20.0.3
         version: 20.0.3
@@ -87,6 +96,9 @@ importers:
       simple-git:
         specifier: ^3.23.0
         version: 3.23.0
+      simple-git-hooks:
+        specifier: ^2.11.0
+        version: 2.11.0
       stale-dep:
         specifier: ^0.7.0
         version: 0.7.0
@@ -1377,6 +1389,10 @@ packages:
     resolution: {integrity: sha512-Wj71sXE4Q4AkGdG9Tvq1u/fquNz9EdG4LIJMwVVII7ashjD/8cf8fyIfJAjRr6YcsXnSE8cOGQPq1gqeR8z+3w==}
     dev: true
 
+  /@types/chroma-js@2.4.4:
+    resolution: {integrity: sha512-/DTccpHTaKomqussrn+ciEvfW4k6NAHzNzs/sts1TCqg333qNxOhy8TNIoQCmbGG3Tl8KdEhkGAssb1n3mTXiQ==}
+    dev: true
+
   /@types/debug@4.1.12:
     resolution: {integrity: sha512-vIChWdVG3LG1SMxEvI/AK+FWJthlrqlTu7fbrlywTkkaONwk/UAGaULXRlf8vkzFBLVm0zkMdCquhL5aOjhXPQ==}
     dependencies:
@@ -2613,6 +2629,10 @@ packages:
   /chownr@2.0.0:
     resolution: {integrity: sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==}
     engines: {node: '>=10'}
+    dev: true
+
+  /chroma-js@2.4.2:
+    resolution: {integrity: sha512-U9eDw6+wt7V8z5NncY2jJfZa+hUH8XEj8FQHgFJTrUFnJfXYf4Ml4adI2vXZOjqRDpFWtYVWypDfZwnJ+HIR4A==}
     dev: true
 
   /ci-info@3.9.0:
@@ -4541,6 +4561,11 @@ packages:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
     dev: true
 
+  /ignore-dependency-scripts@1.0.1:
+    resolution: {integrity: sha512-WqyrHQb35hinQkdzsNTpFqlmnksHk0mHxmSX/03i91U4WdeiTOYTYf89dB15E8q0oP3lcY+1GP95sqSgjWGUdA==}
+    hasBin: true
+    dev: true
+
   /ignore-walk@5.0.1:
     resolution: {integrity: sha512-yemi4pMf51WKT7khInJqAvsIGzoqYXblnsz0ql8tM+yi1EKYTY1evX4NAbJrLL/Aanr2HyZeluqU+Oi7MGHokw==}
     engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
@@ -6408,6 +6433,12 @@ packages:
   /signal-exit@4.1.0:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
+    dev: true
+
+  /simple-git-hooks@2.11.0:
+    resolution: {integrity: sha512-Wab2uzjGJEL8Kx+2UY8waUSfkiolt2RbaAJWvPCjaAEXrrKoS7JqPk4STiIVl/yt3asZRUzFoK2ryhwvgh5rYw==}
+    hasBin: true
+    requiresBuild: true
     dev: true
 
   /simple-git@3.23.0:

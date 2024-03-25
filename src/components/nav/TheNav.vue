@@ -38,6 +38,8 @@
       </template>
     </VDropdown>
 
+    <SettingsThemeColors />
+
     <a
       btn-icon
       rel="noreferrer"

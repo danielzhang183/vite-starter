@@ -8,8 +8,12 @@
       "DOM"
     ],
     "useDefineForClassFields": true,
+    "baseUrl": "./",
     "module": "ESNext",
     "moduleResolution": "Node",
+    "paths": {
+      "~/*": ["src/*"]
+    },
     "resolveJsonModule": true,
     "types": [
       "vitest",

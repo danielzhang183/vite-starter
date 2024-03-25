@@ -8,6 +8,6 @@
   --c-dark-primary: rgb(var(--rgb-dark-primary));
   --c-dark-primary-active: #b66b0d;
   --c-dark-primary-light: #d1822980;
-  --c-dark-primary-fade: #cc7d241a;
+  --c-dark-primary-fade: #d1822980;
   --rgb-dark-primary: 204, 125, 36;
 }
