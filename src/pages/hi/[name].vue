@@ -37,7 +37,7 @@ watchEffect(() => {
 
     <div>
       <button
-        m="3 t6" btn-solid text-sm
+        m="3 t6" text-sm btn-solid
         @click="router.back()"
       >
         {{ t('button.back') }}

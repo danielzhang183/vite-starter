@@ -5,7 +5,7 @@
     </button>
 
     <a
-      i-carbon-logo-github icon-btn
+      icon-btn i-carbon-logo-github
       rel="noreferrer"
       href="https://github.com/danielzhang183/vite-starter"
       target="_blank"

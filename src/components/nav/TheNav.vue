@@ -14,6 +14,8 @@
 
     <div flex-auto />
 
+    <SettingsScreenFull />
+
     <button btn-icon title="Theme Toggle" @click="toggleDark">
       <div i-ph-sun-duotone dark:i-ph-moon-duotone />
     </button>

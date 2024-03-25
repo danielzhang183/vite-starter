@@ -37,7 +37,7 @@ const { t } = useI18n()
 
     <div>
       <button
-        btn-solid m-3 text-sm
+        m-3 text-sm btn-solid
         :disabled="!name"
         @click="go"
       >
