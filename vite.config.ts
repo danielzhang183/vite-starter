@@ -1,3 +1,5 @@
+/// <reference types="vitest" />
+
 import path from 'node:path'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -68,6 +70,11 @@ export default defineConfig({
       include: [path.resolve(__dirname, 'locales/**')],
     }),
   ],
+  // https://github.com/vitest-dev/vitest
+  test: {
+    include: ['test/**/*.test.ts'],
+    environment: 'jsdom',
+  },
   css: {
     postcss: {
       plugins: [postcssNested],
