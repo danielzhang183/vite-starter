@@ -1,4 +1,5 @@
 export const isDark = useDark()
+export const colorMode = computed(() => isDark.value ? 'dark' : 'light')
 
 /**
  * Credit to [@hooray](https://github.com/hooray)

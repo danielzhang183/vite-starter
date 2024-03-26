@@ -7,8 +7,13 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    CommandItem: typeof import('./components/command/CommandItem.vue')['default']
+    CommandKey: typeof import('./components/command/CommandKey.vue')['default']
+    CommandPanel: typeof import('./components/command/CommandPanel.vue')['default']
     Counter: typeof import('./components/Counter.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
+    ModalContainer: typeof import('./components/modal/ModalContainer.vue')['default']
+    ModalDialog: typeof import('./components/modal/ModalDialog.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SettingsBuildInfo: typeof import('./components/settings/SettingsBuildInfo.vue')['default']

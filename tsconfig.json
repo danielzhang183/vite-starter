@@ -10,7 +10,7 @@
     "useDefineForClassFields": true,
     "baseUrl": "./",
     "module": "ESNext",
-    "moduleResolution": "Node",
+    "moduleResolution": "Bundler",
     "paths": {
       "~/*": ["src/*"]
     },
@@ -18,7 +18,7 @@
     "types": [
       "vitest",
       "vite/client",
-      "vite-plugin-pages/client",
+      "unplugin-vue-router/client",
       "vite-plugin-vue-layouts/client"
     ],
     "strict": true,

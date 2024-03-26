@@ -1,5 +1,5 @@
 import type { App } from 'vue'
-import type { Router } from 'vue-router'
+import type { Router } from 'vue-router/auto'
 
 interface Context {
   app: App<Element>
