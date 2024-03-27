@@ -14,18 +14,10 @@
 
     <div flex-auto />
 
-    <button btn-icon @click="toggleCommandPanel">
-      <div i-ph-command-duotone />
-    </button>
-
+    <SettingsCommandPanel />
     <SettingsScreenFull />
-
-    <button btn-icon title="Theme Toggle" @click="toggleDark">
-      <div i-ph-sun-duotone dark:i-ph-moon-duotone />
-    </button>
-
+    <SettingsColorMode />
     <SettingsThemeColors />
-
     <SettingsBuildInfo />
 
     <a

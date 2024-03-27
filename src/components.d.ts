@@ -17,6 +17,8 @@ declare module 'vue' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SettingsBuildInfo: typeof import('./components/settings/SettingsBuildInfo.vue')['default']
+    SettingsColorMode: typeof import('./components/settings/SettingsColorMode.vue')['default']
+    SettingsCommandPanel: typeof import('./components/settings/SettingsCommandPanel.vue')['default']
     SettingsScreenFull: typeof import('./components/settings/SettingsScreenFull.vue')['default']
     SettingsThemeColors: typeof import('./components/settings/SettingsThemeColors.vue')['default']
     TheNav: typeof import('./components/nav/TheNav.vue')['default']
