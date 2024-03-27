@@ -3,11 +3,16 @@ import screenfull from 'screenfull'
 
 const isFullscreen = ref(false)
 
+onMounted(() => {
+  if (screenfull.isEnabled)
+    screenfull.onchange(() => isFullscreen.value = !isFullscreen.value)
+})
+
+onUnmounted(() => screenfull.off('change', () => {}))
+
 function toggleScreenFull() {
-  if (screenfull.isEnabled) {
+  if (screenfull.isEnabled)
     screenfull.toggle()
-    isFullscreen.value = screenfull.isFullscreen
-  }
 }
 </script>
 

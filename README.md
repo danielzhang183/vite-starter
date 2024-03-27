@@ -1,5 +1,7 @@
 # Vite Template
 
+**Opinionated template starter**
+
 ### Development
 
 To run this project locally, you need to have [Node.js v20.0+](https://nodejs.org/en/) and [pnpm](https://pnpm.io/) installed.
