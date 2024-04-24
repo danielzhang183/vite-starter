@@ -1,7 +1,5 @@
 name: CI
 
-permissions: {}
-
 on:
   push:
     branches:
@@ -9,8 +7,6 @@ on:
   pull_request:
     branches:
       - main
-  workflow_dispatch: {}
-  merge_group: {}
 
 jobs:
   ci:
@@ -19,6 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: corepack enable
+
       - uses: actions/setup-node@v4
         with:
           node-version: 20
